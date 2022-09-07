@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimrah's online store</title>
+    <style>
+        body {
+            background-image: url("https://news.elearninginside.com/wp-content/uploads/2018/01/business-and-education-background-1024x576.jpg");
+            color: black;
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .left {
+            /* float: left; */
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 20px;
+
+        }
+
+        .header h1 {
+            font-size: 19px;
+            top: 23px;
+
+        }
+        .left div{
+            text-align: center;
+            line-height: 15px;
+        }
+        .left img {
+            width: 57px;
+            right: 23px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 54%;
+            margin: 13px auto;
+            font-size: 14px;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            float: right;
+            font-size: 14px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            /* top,bottom and left,right */
+            padding: 24px 13px;
+            font-size: 13px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(100, 88, 88);
+            text-decoration: underline;
+        }
+
+        .right {
+            position: absolute;
+            top: 27px;
+            right: 13px;
+            display: inline-block;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Baloo Bhaina 2', cursive;
+            font-size: 11px;
+        }
+
+        .btn:hover {
+            background-color: rgb(61, 58, 58);
+        }
+        .container{
+            margin: 43px 180px;
+            border: 2px solid white;
+            padding: 27px;
+            border-radius: 28px;
+            width: 33%;
+        }
+        .form-group input{
+            border-radius: 6px;
+            border: 2px solid black;
+            margin: 2px auto;
+            padding: 2px 0px;
+            text-align: center;
+            display: block;
+            width: 236px;
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+        .container h1{
+            font-family: 'Baloo Bhaina 2', cursive;
+            text-align: center;
+            /* text-decoration: underline; */
+            font-size: 23px;
+        }
+        .container button{
+            display: block;
+            width: 240px;
+            margin: 7px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="Capture.jpg" alt="No image found">
+            <h1>Kiddo Tutor</h1>
+        </div>
+        <!-- for navigation bar -->
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <!-- # means apnay ap sey link ha -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Email us</button>
+            <button class="btn">Call us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join for demo classes</h1>
+        <form class="form-group" action="noaction.php">
+            <div>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your gender">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your locality">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your email address">
+            </div>
+        </form>
+        <button class="btn" type="submit">Submit</button>
+    </div>
+</body>
+
+</html>
